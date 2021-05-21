@@ -9,6 +9,7 @@
      
 - Architecture: 
 
+- [Link to Figma](https://www.figma.com/file/efPjXJRB78XDCNxJ8U9M7y/Plantie-React-Architechture?node-id=0%3A1)
 
 ### Time/Priority Matrix
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
@@ -49,6 +50,17 @@
 
 
 ## Components - Descriptions
+
+- App
+- SignUp
+- Login
+- Tasks
+- Calendar
+- FindPlant
+- MyPlants
+- Profile
+- Footer
+- Nav
 
 ## Additional Libraries
 - Bulma
