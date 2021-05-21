@@ -7,7 +7,7 @@
 ### Wireframes and Architecture
 - Wireframes: 
      
-- Architecture: 
+- [Architecture:] (https://www.figma.com/file/efPjXJRB78XDCNxJ8U9M7y/Plantie-React-Architechture?node-id=0%3A1)
 
 
 ### Time/Priority Matrix
