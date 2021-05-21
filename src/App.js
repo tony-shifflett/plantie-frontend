@@ -8,9 +8,12 @@ function App() {
 
   return (
     <div className="App">
+<<<<<<< HEAD
+=======
       <Splash />
+>>>>>>> 60f34fab1613ca86ecd7cba6054e92f7c091dfea
       <FindPlants/>
-    
+     
     </div>
   );
 }
