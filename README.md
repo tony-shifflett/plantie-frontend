@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# Best Timer Ever ⏱️
+## Description
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Project Links
+- [Back end repo](https://github.com/tony-shifflett/plantie-backend) 
+- [Front end repo](https://github.com/tony-shifflett/plantie-frontend)
+### Wireframes and Architecture
+- Wireframes: 
+     
+- Architecture: (https://www.figma.com/file/efPjXJRB78XDCNxJ8U9M7y/Plantie-React-Architechture?node-id=0%3A1)
 
-## Available Scripts
 
-In the project directory, you can run:
+### Time/Priority Matrix
+| Component | Priority | Estimated Time | Time Invested | Actual Time |
+| --- | :---: |  :---: | :---: | :---: |
+| Git management | H | 8hrs | 10hrs | 10hrs |
+| Q&A and bug fixes | H | 4hrs | 10hrs | 10hrs |
+| Connection | H | 1hr | 1hrs | 2hrs |
+| Express  | H | 1hr | 1hrs | 1hrs |
+| Routes | H | 2hrs | 2hrs | 2hrs |
+| Controllers | H | 3hrs | 8hrs | 8hrs |
+| Seed | H | 4hrs | 1hrs | 1hrs |
+| Deployment | H | 2hrs | 1hrs | 1hrs |
+| Install and set up react router | H | 0.5hrs | 0.5hrs | 0.5hrs |
+| Switch, Links, Routes | H | 2hrs | 1hrs | 1hrs |
+| Header| H | 2hrs | 2hrs | 2hrs |
+| Home Display List from Backend | H | 4hrs | 1hrs | 1hrs |
+| CRUD options | H | 6hrs | 20hrs | 20hrs |
+| Create Form | H | 5hrs | 10hrs | 10hrs |
+| Connecting Form to backend | H | 4hrs | 6hrs | 6hrs |
+| Presentation Outline | H | 4hrs| 1hrs | 1hrs |
+| Talking point synchronized timer | H | 4hr s| 5hrs | 5hrs |
+| Responsiveness | H | 5hrs | 8hrs | 8hrs |
+| Progress Bar | L | 5hrs | 5hrs | 5hrs |
+| Timer Interface | L | 4hrs | 6hrs | 6hrs |
+| Extra Styling | L | 2hrs | 4hrs | 4hrs |
+| Talking points drop down menu | L | 2hrs | 0hrs | 0hrs |
+| Confetti | L | 2hrs | 0hrs | 0hrs |
+| Alert | L | 1hrs| 0hrs | 0hrs |
+| Total | H | 86.5hrs| 114.5hrs |  |
+## MVP/Post-MVP
+### MVP
 
-### `npm start`
+### Post-MVP
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Components - Descriptions
 
-### `npm test`
+## Additional Libraries
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
