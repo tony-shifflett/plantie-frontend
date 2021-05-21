@@ -5,9 +5,12 @@
 - [Back end repo](https://github.com/tony-shifflett/plantie-backend) 
 - [Front end repo](https://github.com/tony-shifflett/plantie-frontend)
 ### Wireframes and Architecture
-- Wireframes: [Wireframes on Behance mockup](https://www.behance.net/gallery/116481007/Plant-Care-App-UXUI?tracking_source=search_projects_recommended)
-     
-- Architecture: 
+
+- Wireframes: 
+
+- Architecture: (https://www.figma.com/file/efPjXJRB78XDCNxJ8U9M7y/Plantie-React-Architechture?node-id=0%3A1)
+ f70babfecfd63616ed93370aabf5afbee86e444e
+
 
 - [Link to Figma](https://www.figma.com/file/efPjXJRB78XDCNxJ8U9M7y/Plantie-React-Architechture?node-id=0%3A1)
 
