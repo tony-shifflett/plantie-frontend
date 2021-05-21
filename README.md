@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# Plantie 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+Plant Care and Tracking App
+### Project Links
+- [Back end repo](https://github.com/tony-shifflett/plantie-backend) 
+- [Front end repo](https://github.com/tony-shifflett/plantie-frontend)
+### Wireframes and Architecture
 
-## Available Scripts
+- Wireframes: 
 
-In the project directory, you can run:
+- Architecture: (https://www.figma.com/file/efPjXJRB78XDCNxJ8U9M7y/Plantie-React-Architechture?node-id=0%3A1)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- [Link to Figma](https://www.figma.com/file/efPjXJRB78XDCNxJ8U9M7y/Plantie-React-Architechture?node-id=0%3A1)
 
-### `npm test`
+### Time/Priority Matrix
+| Component | Priority | Estimated Time | Time Invested | Actual Time |Completed|
+| --- | :---: |  :---: | :---: | :---: |:---:|
+| Git management | H | 8hrs | 10hrs |  |ongoing|
+| Q&A and bug fixes | H | 8hrs | 10hrs | |ongoing|
+| Connection | H | 1hr | 1hr | 1hr |X|
+| Express  | H | 1hr | 1hrs |1hr|X|
+| Routes | H | 2hrs | 2hrs | ||
+| Controllers | H | 3hrs | 8hrs |||
+| Seed | H | 4hrs | 1hrs | 1hr||
+| Deployment | H | 2hrs | 1hrs | 1hrs |X|
+| Install and set up react router | H | 0.5hrs | 0.5hrs |0.5hrs |X|
+| Switch, Links, Routes | H | 2hrs | 1hrs | ||
+| Header (Footer)| H | 2hrs | 2hrs | ||
+| Home Display List from Backend | H | 4hrs | 1hrs |  ||
+| CRUD options | H | 6hrs | 20hrs |  ||
+| Create Form | H | 5hrs | 10hrs |  ||
+| Connecting Form to backend | H | 4hrs | 6hrs | ||
+| Presentation Outline | H | 4hrs| 1hrs | ||
+| Responsiveness | H | 5hrs | 8hrs | ||
+| Dark mode/lightmode | L | 1hrs| 3hrs |  ||
+| Extra Styling | L | 2hrs | 4hrs |  ||
+| Total | H | 86.5hrs| 114.5hrs |  |X|
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## MVP/Post-MVP
+### MVP
+- The app is deployed fully deployed (Front-end and the Back-end).
+- CRUD Functionality
+- Your team's choice of project from the UX Projects directory.
+- Students include a planning/ directory that sufficiently demonstrates their team's planning process.
+- BOTH repos have a README.md that adequately documents the project
+- The commit history of your repos show a roughly equal number of commits from each group member
+- A Team page to show case each team member's picture, passion, and contribution on the project.
+### Post-MVP
+- Dark mode/lightmode
+- JWT Authentication
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Components - Descriptions
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- App
+- SignUp
+- Login
+- Tasks
+- Calendar
+- FindPlant
+- MyPlants
+- Profile
+- Footer
+- Nav
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Additional Libraries
+- Bulma
+- Reactstrap
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
