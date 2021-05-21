@@ -6,8 +6,9 @@
 - [Front end repo](https://github.com/tony-shifflett/plantie-frontend)
 ### Wireframes and Architecture
 - Wireframes: 
-     
+
 - Architecture: (https://www.figma.com/file/efPjXJRB78XDCNxJ8U9M7y/Plantie-React-Architechture?node-id=0%3A1)
+ f70babfecfd63616ed93370aabf5afbee86e444e
 
 
 ### Time/Priority Matrix
@@ -29,15 +30,18 @@
 | Create Form | H | 5hrs | 10hrs | 10hrs |
 | Connecting Form to backend | H | 4hrs | 6hrs | 6hrs |
 | Presentation Outline | H | 4hrs| 1hrs | 1hrs |
+| Timer | H | 8hrs | 7hrs | 7hrs |
 | Talking point synchronized timer | H | 4hr s| 5hrs | 5hrs |
 | Responsiveness | H | 5hrs | 8hrs | 8hrs |
 | Progress Bar | L | 5hrs | 5hrs | 5hrs |
 | Timer Interface | L | 4hrs | 6hrs | 6hrs |
+| Dark mode/lightmode | L | 1hrs| 3hrs | 3hrs |
 | Extra Styling | L | 2hrs | 4hrs | 4hrs |
 | Talking points drop down menu | L | 2hrs | 0hrs | 0hrs |
 | Confetti | L | 2hrs | 0hrs | 0hrs |
 | Alert | L | 1hrs| 0hrs | 0hrs |
-| Total | H | 86.5hrs| 114.5hrs |  |
+| Total | H | 86.5hrs| 114.5hrs | 114.5hrs |
+
 ## MVP/Post-MVP
 ### MVP
 
