@@ -9,6 +9,7 @@ import {faHome, faCalendar, faSpa, faUser} from '@fortawesome/free-solid-svg-ico
 import FindPlants from './components/FindPlants/FindPlants'
 import Splash from "./components/Splash/Splash"
 import Footer from './components/Footer/Footer'
+import Calendar from './components/Calendar/Calendar'
 
 // library function to add icons
 library.add(faHome, faCalendar, faSpa, faUser)
@@ -19,7 +20,7 @@ function App() {
     <div className="App">
 
       <Splash />
-
+      <Calendar />
       <FindPlants/>
       <Footer/>
     </div>
