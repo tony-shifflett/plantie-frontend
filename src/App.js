@@ -1,19 +1,27 @@
 import React from 'react'
 import './App.css';
 import {Route, Link, Switch} from "react"
+
+// font awesome imports 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import {faHome, faCalendar, faSpa, faUser} from '@fortawesome/free-solid-svg-icons';
+
 import FindPlants from './components/FindPlants/FindPlants'
 import Splash from "./components/Splash/Splash"
+import Footer from './components/Footer/Footer'
+
+// library function to add icons
+library.add(faHome, faCalendar, faSpa, faUser)
 
 function App() {
 
   return (
     <div className="App">
-<<<<<<< HEAD
-=======
+
       <Splash />
->>>>>>> 60f34fab1613ca86ecd7cba6054e92f7c091dfea
+
       <FindPlants/>
-     
+      <Footer/>
     </div>
   );
 }
