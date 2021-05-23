@@ -2,7 +2,7 @@ import React, { Component } from 'react'
  
 import UserProfile from 'react-user-profile'
  
-class App extends Component {
+class Profile extends Component {
   render() {
     const photo = 'https://api-cdn.spott.tv/rest/v004/image/images/e91f9cad-a70c-4f75-9db4-6508c37cd3c0?width=587&height=599'
     const userName = 'Harvey Specter'
