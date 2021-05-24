@@ -1,16 +1,22 @@
 import React, {useState} from "react"
 import MyPlantsDetails from './MyPlantsDetails'
+import {Link} from 'react-router-dom'
+
+// Needs to be a link here to FindPlants Route '/FindPlants'
 
 
 const MyPlants = (props)=>{
+    
 
     //destructure plant list from props
     const {myPlants} = props
     const [isVisible, setIsVisible] = useState(false)
 
     const plants =()=>{
-
+        
         return (
+            <>
+           <Link to='/FindPlants'> <div>+</div></Link>
             <div id='plant-info'>
                 {myPlants.map((plant)=>(
                     //inline styling for dev only -- remove before deploy 
@@ -23,6 +29,7 @@ const MyPlants = (props)=>{
                     </article>
                 ))}
             </div>
+            </>
         )
     }
 

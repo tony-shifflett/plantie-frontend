@@ -5,15 +5,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const Footer = () => {
     return (
         <div>
-            <Link to="/" 
+            <Link to="/DailyTask" 
                 style={{textDecoration:"none", color:"black"}}>
                 <FontAwesomeIcon icon={['fas', 'home']} />
             </Link>
-            <Link to="/Tasks" 
+            <Link to="/Calendar" 
                 style={{textDecoration:"none", color:"black"}}>
                 <FontAwesomeIcon icon={['fas', 'calendar']} />
             </Link>
-            <Link to="/Calendar" 
+            <Link to="/MyPlants" 
                 style={{textDecoration:"none", color:"black"}}>
                 <FontAwesomeIcon icon={['fas', 'spa']} />
             </Link>
