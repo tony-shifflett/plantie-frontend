@@ -5,11 +5,12 @@ import {Route, Link, Switch} from "react"
 // font awesome imports 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import {faHome, faCalendar, faSpa, faUser} from '@fortawesome/free-solid-svg-icons';
-import Profile from './components/UserProfile/Profile'
+
+// components
 import FindPlants from './components/FindPlants/FindPlants'
 import Splash from "./components/Splash/Splash"
 import Footer from './components/Footer/Footer'
-import Calendar from './components/Calendar/Calendar'
+import DailyTask from "./components/DailyTasks/DailyTasks"
 
 // library function to add icons
 library.add(faHome, faCalendar, faSpa, faUser)
@@ -21,11 +22,8 @@ function App() {
 
       <Splash />
 
-      <Calendar />
-
-      <Profile/>
-
-      <FindPlants/>
+      <FindPlants />
+      <DailyTask />
       <Footer/>
     </div>
   );
