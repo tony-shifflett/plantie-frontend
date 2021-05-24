@@ -1,3 +1,4 @@
+import React from "react"
 import Logo from "./images/icons8-plant-96.png";
 
 const ButtonSection = {
