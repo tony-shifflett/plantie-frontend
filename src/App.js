@@ -19,8 +19,10 @@ function App() {
   return (
     <div className="App">
       <Splash />
+
       <Calendar />
       <Profile/>
+
       <FindPlants/>
       <Footer/>
     </div>
