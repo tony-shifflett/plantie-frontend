@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import {format, startOfWeek, addDays, startOfMonth, endOfMonth, endOfWeek, isSameDay, isSameMonth} from "date-fns";
-// import format from "date-fns/format";
 import addMonths from "date-fns/addMonths";
 import subMonths from "date-fns/subMonths";
 import toDate from "date-fns/toDate"
@@ -32,6 +31,7 @@ const Calendar = () => {
        </div>
        );
     };
+
     const days = () => {
     const dateFormat = "E";
     const days = [];
@@ -45,6 +45,7 @@ const Calendar = () => {
        }
        return <div className="days row">{days}</div>;
     };
+
     const cells = () => {
     const monthStart = startOfMonth(currentDate);
     const monthEnd = endOfMonth(monthStart);
@@ -80,15 +81,19 @@ const Calendar = () => {
      }
      return <div className="body">{rows}</div>;
     }
+
     const nextMonth = () => {
        setCurrentDate(addMonths(currentDate, 1));
     };
+
     const prevMonth = () => {
        setCurrentDate(subMonths(currentDate, 1));
     };
+
     const onDateClick = day => {
     setSelectedDate(day);
     }
+
     return (
        <div className="calendar">
           <div>{header()}</div>
@@ -97,4 +102,5 @@ const Calendar = () => {
        </div>
       );
     };
+
     export default Calendar;
