@@ -2,6 +2,8 @@ import React, {useState} from "react"
 import MyPlantsDetails from './MyPlantsDetails'
 import {Link} from 'react-router-dom'
 
+//store import
+import store from  '../store'
 // Needs to be a link here to FindPlants Route '/FindPlants'
 
 
@@ -9,7 +11,8 @@ const MyPlants = (props)=>{
     
 
     //destructure plant list from props
-    const {myPlants} = props
+    //commented out to test store
+    // const {myPlants} = props
     const [isVisible, setIsVisible] = useState(false)
 
     const plants =()=>{
@@ -18,7 +21,7 @@ const MyPlants = (props)=>{
             <>
            <Link to='/FindPlants'> <div>+</div></Link>
             <div id='plant-info'>
-                {myPlants.map((plant)=>(
+                {store.getState().map((plant)=>(
                     //inline styling for dev only -- remove before deploy 
                     <article key={plant.id} style={{border:'1px solid black',marginBottom:"50px"}} >
                         {/* inline style for dev only -- remove before deploy */}
@@ -35,7 +38,7 @@ const MyPlants = (props)=>{
 
     const noPlants =()=><h1>No Plants To Display</h1>
 
-    return myPlants.length > 0 ? plants() : noPlants ()
+    return store.getState().length > 0 ? plants() : noPlants ()
 
 
 }
