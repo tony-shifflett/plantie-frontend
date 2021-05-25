@@ -2,6 +2,9 @@ import React from 'react'
 import './App.css';
 import {Route, Link, Switch} from "react-router-dom"
 
+//store import 
+import store from './store'
+
 // font awesome imports 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import {faHome, faCalendar, faSpa, faUser} from '@fortawesome/free-solid-svg-icons';
@@ -14,7 +17,7 @@ import Splash from "./components/Splash/Splash"
 import Footer from './components/Footer/Footer'
 import Calendar from './components/Calendar/Calendar'
 import MyPlants from './components/MyPlants';
-import plantSeed from './plantSeed'
+// import plantSeed from './plantSeed'
 import DailyTask from "./components/DailyTasks/DailyTasks"
 
 
@@ -28,7 +31,7 @@ function App() {
 
       <Switch>
         <Route exact path='/' render={(rp) => <Splash {...rp} />} />
-        <Route exact path='/MyPlants' render={(rp) => <MyPlants {...rp} myPlants={plantSeed}/>} />
+        <Route exact path='/MyPlants' render={(rp) => <MyPlants {...rp}/>} />
         <Route exact path='/DailyTask' render={(rp) => <DailyTask {...rp}  />} />
         <Route exact path='/Calendar' render={(rp) => <Calendar {...rp} />} />
         <Route exact path='/Profile' render={(rp) => <Profile {...rp} />}/>
