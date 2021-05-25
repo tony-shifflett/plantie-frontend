@@ -1,9 +1,9 @@
-import React, {useState} from "react"
+import React, {useEffect, useState} from "react"
 import MyPlantsDetails from './MyPlantsDetails'
 import {Link} from 'react-router-dom'
 
 //store import
-import store from  '../store'
+import store, {getPlants} from  '../store'
 // Needs to be a link here to FindPlants Route '/FindPlants'
 
 
@@ -36,8 +36,14 @@ const MyPlants = (props)=>{
         )
     }
 
-    const noPlants =()=><h1>No Plants To Display</h1>
-
+    const noPlants =()=>{
+        // store.dispatch(getPlants)
+        //returns no plants screen while waiting for load
+        return (
+            <h1>No Plants To Display</h1>
+        )
+    }
+    // useEffect(()=>{store.dispatch(getPlants)},[])
     return store.getState().length > 0 ? plants() : noPlants ()
 
 
