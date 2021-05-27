@@ -69,3 +69,4 @@ Plant Care and Tracking App
 - Redux
 - redux-thunk 
 - react-icons 
+- react-cam
