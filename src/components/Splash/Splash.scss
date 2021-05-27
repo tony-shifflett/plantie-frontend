@@ -13,6 +13,7 @@ $neutral: #D2D2D2;
 .splash {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 button {
@@ -41,8 +42,8 @@ button {
   }
 }
 
-.logo{
-  height: 75px;
+.logoContain {
+  width: 75px;
 }
 
 .plantie {

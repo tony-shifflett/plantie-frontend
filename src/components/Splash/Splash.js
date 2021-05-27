@@ -26,11 +26,13 @@ const Splash = () => {
   return (
     <div className="splashContainer">
       <div className="splash">
-        <img
-          className="logo"
-          src="https://res.cloudinary.com/dnfumu7j3/image/upload/v1621962554/plant_ynspft.svg"
-          alt="plant logo"
-        />
+        <div className="logoContain">
+          <img
+            className="logo"
+            src="https://res.cloudinary.com/dnfumu7j3/image/upload/v1621962554/plant_ynspft.svg"
+            alt="plant logo"
+          />
+        </div>
         <h1 className="plantie">Plantie</h1>
         <p>We help make plant care easy.</p>
         <div className="contact">
