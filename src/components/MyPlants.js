@@ -13,9 +13,11 @@ const MyPlants = (props)=>{
     //destructure plant list from props
     //commented out to test store
     // const {myPlants} = props
-    const [isVisible, setIsVisible] = useState(false)
+    // const [isVisible, setIsVisible] = useState(false)
 
     const plants =()=>{
+
+      
         
         return (
             <>
@@ -25,10 +27,10 @@ const MyPlants = (props)=>{
                     //inline styling for dev only -- remove before deploy 
                     <article key={plant.id} style={{border:'1px solid black',marginBottom:"50px"}} >
                         {/* inline style for dev only -- remove before deploy */}
-                        <img src={plant.img} style={{height: "40vh", width:"66vw"}}/>
-                        <h1 onClick={()=>setIsVisible(!isVisible)}>{plant.name}</h1>
+                        <img  src={plant.img} style={{height: "40vh", width:"66vw"}}/>
+                        <h1>{plant.nickname}</h1>
                         <h3>{plant.type}</h3>
-                        <MyPlantsDetails plant={plant} isVisible={isVisible}/>
+                        <MyPlantsDetails isVisible = {plant.isVisible} plant={plant}/>
                     </article>
                 ))}
             </div>
