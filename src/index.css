@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Work+Sans:wght@400;500&display=swap");
+h1 {
+  font-family: "Comfortaa", cursive;
+  font-weight: regular;
+  font-size: 16px;
+}
+
+h2 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: regular;
+  font-size: 22px;
+  font-weight: lighter;
+}
+
+p {
+  font-family: "Work Sans", sans-serif;
+  font-weight: regular;
+  font-size: 12px;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  font-weight: regular;
+}
+/*# sourceMappingURL=index.css.map */

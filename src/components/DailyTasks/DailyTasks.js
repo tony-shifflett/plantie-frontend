@@ -1,10 +1,20 @@
-import React, {useState} from "react";
+
+import React, { useState } from "react";
 //store import
-import store, {getPlants} from  '../../store'
-import {format, startOfWeek, addDays, startOfMonth, endOfMonth, endOfWeek, isSameDay, isSameMonth} from "date-fns";
+import store, { getPlants } from "../../store";
+import {
+  format,
+  startOfWeek,
+  addDays,
+  startOfMonth,
+  endOfMonth,
+  endOfWeek,
+  isSameDay,
+  isSameMonth,
+} from "date-fns";
 import addMonths from "date-fns/addMonths";
 import subMonths from "date-fns/subMonths";
-import toDate from "date-fns/toDate"
+import toDate from "date-fns/toDate";
 
 const DailyTasks = (props) => {
   //test schema?
@@ -25,7 +35,6 @@ const DailyTasks = (props) => {
       </div>
     );
   });
-
   const Card = {
     padding: "2px 16px",
     boxShadow: "1px 1px 7px 0px rgba(0,0,0,0.4)",
@@ -33,7 +42,6 @@ const DailyTasks = (props) => {
     backgroundColor: "#F8F8F8",
     borderRadius: "15px",
   };
-
   const Container = {
     display: "flex",
     flexDirection: "column",
@@ -41,16 +49,11 @@ const DailyTasks = (props) => {
     alignItems: "center",
   };
 
-  const [currentDate, setCurrentDate] = useState(new Date())
-
-  const date = () => { 
-    const dateFormat = "MMMM d yyyy"
-    return ( 
-      <h2>{format(currentDate, dateFormat)}</h2>
-    )
-  }
-
-  
+  const [currentDate, setCurrentDate] = useState(new Date());
+  const date = () => {
+    const dateFormat = "MMMM d yyyy";
+    return <h2>{format(currentDate, dateFormat)}</h2>;
+  };
 
   return (
     <>
@@ -62,9 +65,4 @@ const DailyTasks = (props) => {
     </>
   );
 };
-
 export default DailyTasks;
-
-// notes for next meeting-
-// in wireframe it looks like individual tasks have properties themselves - like plant name,
-// watering time, and amount of water
