@@ -1,0 +1,70 @@
+$primary: #326e62;
+$secondary: #81b8a8;
+$neutral: #D2D2D2;
+
+button {
+  margin-bottom: 20px;
+  font-weight: medium;
+  font-size: 14px;
+  color: white;
+  background-color:$primary;
+  border: none;
+  border-radius: 75px;
+  box-shadow: 0 3px 5px -2px rgba(0,0,0,.5);
+  transition: all 0.4s ease 0s;
+  cursor: pointer;
+  width: 240px;
+  height: 40px;
+  outline: none;
+  &:hover {
+    background-color: $secondary;
+  }
+
+  &:active {
+      transition: all 0.1s ease 0s;
+    transform: translate(0px, 1px);
+    // background-color: rgb(77, 133, 77);
+        background-color: $primary;
+  }
+}
+
+.logo{
+  height: 75px;
+}
+
+.plantie {
+  font-size: 24px;
+  color: $primary;
+}
+
+.line {
+  text-transform: uppercase;
+  font-size: 10px;
+  &:before,
+  &::after {
+    
+    display: inline-block;
+    content: "";
+    
+    border-top: .1px solid $neutral;
+    width: 6rem;
+    margin: 0 .2rem;
+    transform: translateY(-.20rem);
+  }
+} 
+
+.icon {
+  color: $neutral;
+  margin: 5px;
+  outline: none;
+    transition: all .15s ease 0s;
+    &:hover {
+    color: $secondary;
+  }
+
+  &:active {
+      transition: all 0.15s ease 0s;
+    // background-color: rgb(77, 133, 77);
+        color: $primary;
+  }
+}

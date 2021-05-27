@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react'
-import './App.css';
+import './App.scss';
 import {Route, Link, Switch} from "react-router-dom"
 
 //store import 
