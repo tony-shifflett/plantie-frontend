@@ -1,0 +1,95 @@
+// Import font
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Work+Sans:wght@400;500&display=swap");
+
+// Color Palette
+$primary: #326e62;
+$water: #8FA9BB;
+$secondary: #81b8a8;
+$neutral: #D2D2D2;
+$millenialpink: #FEF2F0;
+$pink: #F9BAB1;
+
+// Mixins
+@mixin titleFont {
+  font-family: "Comfortaa", cursive;
+  font-weight: regular;
+}
+
+@mixin bodyFont {
+  font-family: "Work Sans", sans-serif;
+  font-weight: regular;
+}
+
+@mixin input {
+  margin:2px;
+  font-weight: medium;
+  color: black;
+  font-size:16px;
+  border: 1px solid $primary;
+  outline:none;
+  border-radius: 75px;
+    width: 240px;
+  height: 40px;
+  transition: all 0.2s ease 0s;
+    &:focus {
+    box-shadow: 0 1px 2px 0px rgb(209, 248, 202);
+    border: 1px solid $secondary;
+  }
+}
+
+// Global Styling
+
+h1 {
+  @include titleFont();
+  font-size: 16px;
+}
+
+h2 {
+  @include bodyFont();
+  font-size: 22px;
+  font-weight: lighter;
+}
+
+p {
+  @include bodyFont();
+  font-size:12px;
+}
+body {
+  @include bodyFont();
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//****default react styling****//
+// body {
+//   margin: 0;
+//   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+//     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+//     sans-serif;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+// }
+
+// code {
+//   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+//     monospace;
+// }

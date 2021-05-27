@@ -11,8 +11,6 @@ Plant Care and Tracking App
 
 - Architecture: (https://www.figma.com/file/efPjXJRB78XDCNxJ8U9M7y/Plantie-React-Architechture?node-id=0%3A1)
 
-
-
 - [Link to Figma](https://www.figma.com/file/efPjXJRB78XDCNxJ8U9M7y/Plantie-React-Architechture?node-id=0%3A1)
 
 ### Time/Priority Matrix
@@ -22,20 +20,19 @@ Plant Care and Tracking App
 | Q&A and bug fixes | H | 8hrs | 10hrs | |ongoing|
 | Connection | H | 1hr | 1hr | 1hr |X|
 | Express  | H | 1hr | 1hrs |1hr|X|
-| Routes | H | 2hrs | 2hrs | ||
-| Controllers | H | 3hrs | 8hrs |||
-| Seed | H | 4hrs | 1hrs | 1hr||
+| Routes | H | 2hrs | 2hrs |2hrs|X|
+| Controllers | H | 3hrs | 1hrs |1hr|X|
+| Seed | H | 4hrs | 1hrs | 1hr|X|
 | Deployment | H | 2hrs | 1hrs | 1hrs |X|
 | Install and set up react router | H | 0.5hrs | 0.5hrs |0.5hrs |X|
-| Switch, Links, Routes | H | 2hrs | 1hrs | ||
-| Header (Footer)| H | 2hrs | 2hrs | ||
+| Switch, Links, Routes | H | 2hrs | 1hrs | 1hr|X|
+| Header (Footer)| H | 2hrs | .5 hrs | ||
 | Home Display List from Backend | H | 4hrs | 1hrs |  ||
-| CRUD options | H | 6hrs | 20hrs |  ||
+| CRUD options | H | 6hrs | 3hrs | |ongoing|
 | Create Form | H | 5hrs | 10hrs |  ||
-| Connecting Form to backend | H | 4hrs | 6hrs | ||
+| Connecting Form to backend | H | |  | ||
 | Presentation Outline | H | 4hrs| 1hrs | ||
 | Responsiveness | H | 5hrs | 8hrs | ||
-| Dark mode/lightmode | L | 1hrs| 3hrs |  ||
 | Extra Styling | L | 2hrs | 4hrs |  ||
 | Total | H | 86.5hrs| 114.5hrs |  |X|
 
@@ -49,8 +46,8 @@ Plant Care and Tracking App
 - The commit history of your repos show a roughly equal number of commits from each group member
 - A Team page to show case each team member's picture, passion, and contribution on the project.
 ### Post-MVP
-- Dark mode/lightmode
 - JWT Authentication
+- Edit Plants
 
 
 ## Components - Descriptions
@@ -67,6 +64,8 @@ Plant Care and Tracking App
 - Nav
 
 ## Additional Libraries
-- Bulma
-- Reactstrap
-
+- Sass
+- date-fns
+- Redux
+- redux-thunk 
+- react-icons 
