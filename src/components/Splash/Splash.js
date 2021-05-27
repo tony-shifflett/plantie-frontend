@@ -37,6 +37,7 @@ const Splash = () => {
           <Link to="/DailyTask">
             <button>Sign Up</button>
           </Link>
+          <br></br>
           <Link to="/DailyTask">
             <button>Log In</button>
           </Link>
