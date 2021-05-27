@@ -18,16 +18,16 @@ const ButtonStyle = {
 
 const Splash = () => {
   //fetch existing data from remote database on app load
-  useEffect(()=>{store.dispatch(getPlants)},[])
+  // useEffect(()=>{store.dispatch(getPlants)},[])
   return (
     <div>
       <img src={Logo} alt="plant logo" />
       <h1>Plantie</h1>
       <div>
-        <Link to="/signup">
+        <Link to="/DailyTask">
           <button style={ButtonStyle}>Sign Up</button>
         </Link>
-        <Link to="/login">
+        <Link to="/DailyTask">
           <button style={ButtonStyle}>Log In</button>
         </Link>
       </div>
