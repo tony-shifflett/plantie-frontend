@@ -11,6 +11,7 @@ import {faHome, faCalendar, faSpa, faUser} from '@fortawesome/free-solid-svg-ico
 
 
 // components
+import About from "./components/About/About"
 import Profile from './components/Profile/Profile'
 import FindPlants from './components/FindPlants/FindPlants'
 import Splash from "./components/Splash/Splash"
@@ -38,6 +39,7 @@ function App() {
         <Route exact path='/Calendar' render={(rp) => <Calendar {...rp} />} />
         <Route exact path='/Profile' render={(rp) => <Profile {...rp} />}/>
         <Route exact path='/FindPlants' render={(rp) => <FindPlants {...rp} />} />
+        <Route exact path="/about" render={(rp) => <About {...rp}/>} />
         <Route exact path='/Identify' render={(rp) => <Identify {...rp} />} />
       </Switch>
       <Footer/>

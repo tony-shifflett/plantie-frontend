@@ -6,7 +6,7 @@ $pink: #f9bab1;
 .iconStyle {
 
   color: black;
-  font-size: 30px;
+  font-size: 34px;
   transition: all 0.1s ease 0s;
   cursor: pointer;
   &:hover {
@@ -30,15 +30,17 @@ $pink: #f9bab1;
   position: fixed;
   bottom: 0;
   width: 100%;
-  padding: 12px 0;
+  height: 80px;
+//   padding: 12px 0;
 }
 
 .containLink {
   display: flex;
-  justify-content: space-evenly;
   flex-direction: row;
+  margin-top: 23px;
+  width: 100%;
 }
 
 .containLink a {
-  margin: 30px;
+  margin: 0 auto;
 }
