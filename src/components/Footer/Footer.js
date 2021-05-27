@@ -6,6 +6,7 @@ import { VscHome } from "react-icons/vsc";
 import { AiOutlineCalendar } from "react-icons/ai";
 import { RiPlantLine } from "react-icons/ri";
 import { FaRegUserCircle } from "react-icons/fa";
+import { FiCamera } from "react-icons/fi";
 import "./footer.scss";
 
 const Footer = () => {
@@ -20,6 +21,9 @@ const Footer = () => {
               </Link>
               <Link to="/Calendar">
                 <AiOutlineCalendar className="iconStyle" />
+              </Link>
+              <Link to="/Identify">
+                <FiCamera className="iconStyle" />
               </Link>
               <Link to="/MyPlants">
                 <RiPlantLine className="iconStyle" />
