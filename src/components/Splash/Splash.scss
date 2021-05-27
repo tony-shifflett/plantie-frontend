@@ -2,6 +2,19 @@ $primary: #326e62;
 $secondary: #81b8a8;
 $neutral: #D2D2D2;
 
+.splashContainer {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.splash {
+  display: flex;
+  flex-direction: column;
+}
+
 button {
   margin-bottom: 20px;
   font-weight: medium;
@@ -67,4 +80,8 @@ button {
     // background-color: rgb(77, 133, 77);
         color: $primary;
   }
+}
+
+.cr {
+  font-size: 12px;
 }
