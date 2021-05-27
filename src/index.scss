@@ -20,22 +20,22 @@ $pink: #F9BAB1;
   font-weight: regular;
 }
 
-@mixin input {
-  margin:2px;
-  font-weight: medium;
-  color: black;
-  font-size:16px;
-  border: 1px solid $primary;
-  outline:none;
-  border-radius: 75px;
-    width: 240px;
-  height: 40px;
-  transition: all 0.2s ease 0s;
-    &:focus {
-    box-shadow: 0 1px 2px 0px rgb(209, 248, 202);
-    border: 1px solid $secondary;
-  }
-}
+// @mixin input {
+//   margin:2px;
+//   font-weight: medium;
+//   color: black;
+//   font-size:16px;
+//   border: 1px solid $primary;
+//   outline:none;
+//   border-radius: 75px;
+//     width: 240px;
+//   height: 40px;
+//   transition: all 0.2s ease 0s;
+//     &:focus {
+//     box-shadow: 0 1px 2px 0px rgb(209, 248, 202);
+//     border: 1px solid $secondary;
+//   }
+// }
 
 // Global Styling
 
@@ -56,6 +56,7 @@ p {
 }
 body {
   @include bodyFont();
+  margin:0px;
 
 }
 
