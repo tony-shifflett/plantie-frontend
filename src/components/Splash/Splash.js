@@ -24,32 +24,42 @@ const Splash = () => {
   //fetch existing data from remote database on app load
   // useEffect(()=>{store.dispatch(getPlants)},[])
   return (
-    <div>
-      <img
-        className="logo"
-        src="https://res.cloudinary.com/dnfumu7j3/image/upload/v1621962554/plant_ynspft.svg"
-        alt="plant logo"
-      />
-      <h1 className="plantie">Plantie</h1>
-      <p>We help make plant care easy.</p>
-      <div className="contact">
-        <div>
-          <Link to="/DailyTask">
-            <button>Sign Up</button>
-          </Link>
-          <br></br>
-          <Link to="/DailyTask">
-            <button>Log In</button>
-          </Link>
-          <br></br>
-          <span className="line"> or use </span>
-          <br></br>
-          <Link to="/DailyTask">
-            <FaGooglePlus className="icon" size="25" />
-          </Link>
-          <Link to="/DailyTask">
-            <FaFacebook className="icon" size="25" />
-          </Link>
+    <div className="splashContainer">
+      <div className="splash">
+        <img
+          className="logo"
+          src="https://res.cloudinary.com/dnfumu7j3/image/upload/v1621962554/plant_ynspft.svg"
+          alt="plant logo"
+        />
+        <h1 className="plantie">Plantie</h1>
+        <p>We help make plant care easy.</p>
+        <div className="contact">
+          <div>
+            <Link to="/DailyTask">
+              <button>Sign Up</button>
+            </Link>
+            <br></br>
+            <Link to="/DailyTask">
+              <button>Log In</button>
+            </Link>
+            <br></br>
+            <span className="line"> or use </span>
+            <br></br>
+            <Link to="/DailyTask">
+              <FaGooglePlus className="icon" size="25" />
+            </Link>
+            <Link to="/DailyTask">
+              <FaFacebook className="icon" size="25" />
+            </Link>
+            <br></br>
+            <br></br>
+            <span className="cr">
+              © 2021
+              <Link to="/about" className="abLink">
+                Plantie
+              </Link>
+            </span>
+          </div>
         </div>
       </div>
     </div>
