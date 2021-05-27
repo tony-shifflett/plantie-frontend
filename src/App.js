@@ -19,6 +19,7 @@ import Calendar from './components/Calendar/Calendar'
 import MyPlants from './components/MyPlants';
 // import plantSeed from './plantSeed'
 import DailyTask from "./components/DailyTasks/DailyTasks"
+import Identify from './components/Identify';
 
 
 // library function to add icons
@@ -37,6 +38,7 @@ function App() {
         <Route exact path='/Calendar' render={(rp) => <Calendar {...rp} />} />
         <Route exact path='/Profile' render={(rp) => <Profile {...rp} />}/>
         <Route exact path='/FindPlants' render={(rp) => <FindPlants {...rp} />} />
+        <Route exact path='/Identify' render={(rp) => <Identify {...rp} />} />
       </Switch>
       <Footer/>
     </div>
