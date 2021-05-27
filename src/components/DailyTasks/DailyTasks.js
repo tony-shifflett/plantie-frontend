@@ -1,21 +1,27 @@
-import React from "react";
+import React, {useState} from "react";
+//store import
+import store, {getPlants} from  '../../store'
+import {format, startOfWeek, addDays, startOfMonth, endOfMonth, endOfWeek, isSameDay, isSameMonth} from "date-fns";
+import addMonths from "date-fns/addMonths";
+import subMonths from "date-fns/subMonths";
+import toDate from "date-fns/toDate"
 
 const DailyTasks = (props) => {
   //test schema?
-  const plantList = [
-    {
-      name: "Lenora",
-      status: "Watering time",
-      amount: "150mL",
-    },
-  ];
+  // const plantList = [
+  //   {
+  //     name: "Lenora",
+  //     status: "Watering time",
+  //     amount: "150mL",
+  //   },
+  // ];
 
-  const newPlant = plantList.map((plant, index) => {
+  const newPlant = store.getState().map((plant, index) => {
     return (
       <div key={index}>
-        <h1>{plant.name}</h1>
-        <p>{plant.status}</p>
-        <p>{plant.amount}</p>
+        <h1>{plant.type}</h1>
+        <p>Time to water</p>
+        <p>{plant.water}</p>
       </div>
     );
   });
@@ -35,10 +41,21 @@ const DailyTasks = (props) => {
     alignItems: "center",
   };
 
+  const [currentDate, setCurrentDate] = useState(new Date())
+
+  const date = () => { 
+    const dateFormat = "MMMM d yyyy"
+    return ( 
+      <h2>{format(currentDate, dateFormat)}</h2>
+    )
+  }
+
+  
+
   return (
     <>
       <h1>Today's tasks</h1>
-      <h2>Sun, May 23rd</h2>
+      <div>{date()}</div>
       <div style={Container}>
         <div style={Card}>{newPlant}</div>
       </div>
