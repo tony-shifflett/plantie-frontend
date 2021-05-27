@@ -1,40 +1,63 @@
 import React, {useState, useEffect} from 'react'
 
-const FindPlants = () => {
-    const allPlants = [
-        {
-          name: 'Monstera', 
-          species: 'Monstera deliciosa'
-        },
-        { 
-          name: 'Parlour Palm', 
-          species: 'Chamadorea elegans'
-        }
-      ]
+import store, {getPlants, addPlant} from '../../store'
 
-    const [plants, setPlants] = useState([])
+const FindPlants = (props) => {
+
+  const url = 'https://plantie.herokuapp.com'
+
+  const [plants, setPlants] = useState([])
+  const [filteredPlants,setFilteredPlants] = useState([])
+
+    const getAllPlants = () => { 
+    fetch(url + '/plants')
+    .then((response) => response.json())
+    .then((data) => {
+      setPlants(data)
+      setFilteredPlants(data)
+      })
+  
+  }
+    // const allPlants = [
+    //     {
+    //       name: 'Monstera', 
+    //       species: 'Monstera deliciosa'
+    //     },
+    //     { 
+    //       name: 'Parlour Palm', 
+    //       species: 'Chamadorea elegans'
+    //     }
+    //   ]
+
+    
+    
    
-    const plantList = plants.map((plant, index) => { 
+    const plantList = filteredPlants.map((plant, index) => { 
       return (   
+      
       <div key={index} >
-          <h1>{plant.name}</h1>
-          <h2>{plant.species}</h2>
+          <img src={plant.img}/>
+          <h1>{plant.type}</h1>
+          <h2>{plant.binomial}</h2>
+          <button onClick={() => (store.dispatch(addPlant(plant)))}>Add to Garden</button>
       </div>
       )
   })
 
-  useEffect(() => { 
-    setPlants(allPlants)
-  }, [])
-  
+  useEffect(()=>{
+    getAllPlants()
+    },[])
+
  
+
     const handleChange = (e) => {
     e.preventDefault();
-    setPlants(allPlants.filter(p => p.species.toLowerCase().includes(e.target.value.toLowerCase()) ))
+    setFilteredPlants(plants.filter(p => p.type.toLowerCase().includes(e.target.value.toLowerCase()) || p.binomial.toLowerCase().includes(e.target.value.toLowerCase())))
   }
   
     return (
         <>
+        <h1>Find a plant</h1>
         <form>
             <input
             onChange={handleChange}

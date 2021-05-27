@@ -12,13 +12,14 @@ const middlewareEnhancer = applyMiddleware(thunkMiddleware)
 //per documentation
 const composedEnhancers = compose (middlewareEnhancer)
 
+
 //initial state set to empty array 
 const initialState = [];
 
 
 //action creator function 'add' ; accepts a plant object as parameter and uses it as payload
 
-const addPlant = (plant)=> {
+export function addPlant(plant) {
     return {type:'add', payload:plant}
 }
 

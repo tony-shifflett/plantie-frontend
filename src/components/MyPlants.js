@@ -40,7 +40,10 @@ const MyPlants = (props)=>{
         // store.dispatch(getPlants)
         //returns no plants screen while waiting for load
         return (
+            <>
+            <Link to='/FindPlants'> <div>+</div></Link>
             <h1>No Plants To Display</h1>
+            </>
         )
     }
     // useEffect(()=>{store.dispatch(getPlants)},[])

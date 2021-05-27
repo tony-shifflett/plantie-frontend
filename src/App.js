@@ -1,9 +1,9 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './App.css';
 import {Route, Link, Switch} from "react-router-dom"
 
 //store import 
-import store from './store'
+import store, {getPlants} from './store'
 
 // font awesome imports 
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -25,6 +25,7 @@ import DailyTask from "./components/DailyTasks/DailyTasks"
 library.add(faHome, faCalendar, faSpa, faUser)
 
 function App() {
+  
 
   return (
     <div className="App">
