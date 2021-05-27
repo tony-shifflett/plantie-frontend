@@ -54,7 +54,10 @@ const Splash = () => {
             <br></br>
             <br></br>
             <span className="cr">
-              © 2021 <Link to="/about">Plantie</Link>
+              © 2021
+              <Link to="/about" className="abLink">
+                Plantie
+              </Link>
             </span>
           </div>
         </div>
