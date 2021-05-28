@@ -33,10 +33,6 @@ const MyPlants = (props)=>{
                   setFormData(...formData, event.target.value)
                 }
 
-                // const [nickname, setNickname] = useState(plant.nickname)
-                
-               
-                // console.log(plant.nickname)
 
                 //individual instance of state for each plant to handle visibility of details
                 const [isVisible, setIsVisible] = useState(false);
@@ -48,7 +44,7 @@ const MyPlants = (props)=>{
 
                 const pencilClickHandler = ()=>{
                   updateFormDisplay(!formDisplay)
-                  // console.log(formDisplay)
+                 
                 }
 
 
