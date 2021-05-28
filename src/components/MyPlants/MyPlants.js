@@ -9,14 +9,8 @@ import store, {getPlants} from  '../../store'
 
 const MyPlants = (props)=>{
     
-
-    //destructure plant list from props
-    //commented out to test store
-    // const {myPlants} = props
-    const [isVisible, setIsVisible] = useState(false)
-
     const plants =()=>{
-        
+            
         return (
             <>
                 <Link to='/FindPlants'>
@@ -24,9 +18,7 @@ const MyPlants = (props)=>{
                 </Link>
             <div id='plant-info'>
                 {store.getState().map((plant)=>(
-                    //inline styling for dev only -- remove before deploy 
                     <article key={plant.id}  >
-                        {/* inline style for dev only -- remove before deploy */}
                         <img src={plant.img} />
                         <h1 onClick={()=>setIsVisible(!isVisible)}>{plant.name}</h1>
                         <p>{plant.type}</p>
