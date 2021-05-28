@@ -1,0 +1,53 @@
+$primary: #326e62;
+$water: #8FA9BB;
+$secondary: #81b8a8;
+$neutral: #D2D2D2;
+$millenialpink: #FEF2F0;
+$pink: #F9BAB1;
+
+@mixin titleFont {
+  font-family: "Comfortaa", cursive;
+  font-weight: regular;
+}
+
+@mixin bodyFont {
+  font-family: "Work Sans", sans-serif;
+  font-weight: regular;
+}
+
+
+
+
+.holdFoundPlants {
+    display:flex;
+    flex-direction: column;
+    margin-bottom:70px;
+}
+
+.holdFoundImg img {
+    width: 300px;
+    border-radius: 15px;
+}
+
+.addPlantIcon {
+    display: flex;
+    margin:10px;
+  transition: all 0.4s ease 0s;
+  cursor: pointer;
+    &:hover {
+    color: $secondary;
+  }
+    &:active {
+      transition: all 0.1s ease 0s;
+    transform: translate(0px, 1px);
+    // background-color: rgb(77, 133, 77);
+        color: $primary;
+  }
+
+//   &:active {
+//       transition: all 0.1s ease 0s;
+//     transform: translate(0px, 1px);
+//     // background-color: rgb(77, 133, 77);
+//         background-color: $primary;
+//   }
+}

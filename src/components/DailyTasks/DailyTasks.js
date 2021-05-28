@@ -1,53 +1,87 @@
-import React from "react";
+
+import React, { useState } from "react";
+//store import
+import store, { getPlants } from "../../store";
+import {
+  format,
+  startOfWeek,
+  addDays,
+  startOfMonth,
+  endOfMonth,
+  endOfWeek,
+  isSameDay,
+  isSameMonth,
+} from "date-fns";
+import addMonths from "date-fns/addMonths";
+import subMonths from "date-fns/subMonths";
+import toDate from "date-fns/toDate";
+
+import "./dailytasks.scss"
 
 const DailyTasks = (props) => {
   //test schema?
-  const plantList = [
-    {
-      name: "Lenora",
-      status: "Watering time",
-      amount: "150mL",
-    },
-  ];
+  // const plantList = [
+  //   {
+  //     name: "Lenora",
+  //     status: "Watering time",
+  //     amount: "150mL",
+  //   },
+  // ];
 
-  const newPlant = plantList.map((plant, index) => {
+  const newPlant = store.getState().map((plant, index) => {
     return (
-      <div key={index}>
-        <h1>{plant.name}</h1>
-        <p>{plant.status}</p>
-        <p>{plant.amount}</p>
+      <div>
+        <div className="container">
+          <div className="cardPlant">
+            <div className="holdImg">
+              <div className="plantPic">
+                <img
+                  className="plantCard"
+                  src="https://res.cloudinary.com/dnfumu7j3/image/upload/c_fit,h_100,r_0,w_100/v1621976614/Fresh_Folk_-_Plants_12_ux07af.png"
+                />
+              </div>
+            </div>
+            <div className="holdText">
+              <div className="holdTxtAgain" key={index}>
+                <h3 className="cardTitle">{plant.type}</h3>
+                <p className="cardText">Time to water</p>
+                <p className="cardText">{plant.water}</p>
+              </div>
+            </div>
+            <div className="holdWater">
+              <div className="holdDrop">
+                <img
+                  className="droplet"
+                  src="https://res.cloudinary.com/dnfumu7j3/image/upload/v1621993925/drop_e1ois0.svg"
+                  alt="water droplet"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     );
   });
 
-  const Card = {
-    padding: "2px 16px",
-    boxShadow: "1px 1px 7px 0px rgba(0,0,0,0.4)",
-    width: "90%",
-    backgroundColor: "#F8F8F8",
-    borderRadius: "15px",
-  };
 
-  const Container = {
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
+
+  const [currentDate, setCurrentDate] = useState(new Date());
+  const date = () => {
+    const dateFormat = "MMMM d yyyy";
+    return <h2>{format(currentDate, dateFormat)}</h2>;
   };
 
   return (
-    <>
+    <div>
       <h1>Today's tasks</h1>
-      <h2>Sun, May 23rd</h2>
-      <div style={Container}>
-        <div style={Card}>{newPlant}</div>
-      </div>
-    </>
+      <div>{date()}</div>
+
+      {newPlant}
+
+    </div>
+      
+    
   );
 };
-
+      
 export default DailyTasks;
-
-// notes for next meeting-
-// in wireframe it looks like individual tasks have properties themselves - like plant name,
-// watering time, and amount of water

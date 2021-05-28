@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react'
 
-import store, {getPlants, addPlant} from '../../store'
+import store, { getPlants, addPlant } from '../../store'
+
+import './findplants.scss'
 
 const FindPlants = (props) => {
 
@@ -33,15 +35,20 @@ const FindPlants = (props) => {
     
    
     const plantList = filteredPlants.map((plant, index) => { 
-      return (   
-      
-      <div key={index} >
-          <img src={plant.img}/>
-          <h1>{plant.type}</h1>
-          <h2>{plant.binomial}</h2>
-          <button onClick={() => (store.dispatch(addPlant(plant)))}>Add to Garden</button>
-      </div>
-      )
+      return (
+        <div className="directoryContainer">
+          <div key={index}>
+            <div className="containSearchPlant">
+              <img src={plant.img} />
+            </div>
+            <h1>{plant.type}</h1>
+            <h2>{plant.binomial}</h2>
+            <button onClick={() => store.dispatch(addPlant(plant))}>
+              Add to Garden
+            </button>
+          </div>
+        </div>
+      );
   })
 
   useEffect(()=>{
@@ -56,19 +63,21 @@ const FindPlants = (props) => {
   }
   
     return (
-        <>
-        <h1>Find a plant</h1>
-        <form>
+      <>
+        <div className="findContainer"> 
+          <h1>Find a plant</h1>
+          <form>
             <input
-            onChange={handleChange}
-            type="text"
-            placeholder="Search species..."
-            />   
-        </form>
-        {plantList}
-        
-        </>
-    )
+              onChange={handleChange}
+              type="text"
+              placeholder="Search species..."
+            />
+          </form>
+          <br></br>
+          {plantList}
+        </div>
+      </>
+    );
 }
 
 export default FindPlants

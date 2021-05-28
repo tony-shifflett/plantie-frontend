@@ -1,0 +1,46 @@
+$neutral: #d2d2d2;
+$primary: #326e62;
+$secondary: #81b8a8;
+$pink: #f9bab1;
+
+.iconStyle {
+
+  color: black;
+  font-size: 34px;
+  transition: all 0.1s ease 0s;
+  cursor: pointer;
+  &:hover {
+    color: $pink;
+  }
+}
+
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: center;
+  overflow: hidden;
+  align-items: center;
+
+  background-color: rgb(250, 250, 250);
+  -webkit-box-shadow: 0px -3px 6px 0px rgba(50, 50, 50, 0.25);
+  -moz-box-shadow: 0px -3px 6px 0px rgba(50, 50, 50, 0.25);
+  box-shadow: 0px -3px 10px 0px rgba(50, 50, 50, 0.25);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+//   padding: 12px 0;
+}
+
+.containLink {
+  display: flex;
+  flex-direction: row;
+  margin-top: 23px;
+  width: 100%;
+}
+
+.containLink a {
+  margin: 0 auto;
+}

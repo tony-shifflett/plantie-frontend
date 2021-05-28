@@ -1,0 +1,49 @@
+$primary: #326e62;
+$water: #8FA9BB;
+$secondary: #81b8a8;
+$neutral: #D2D2D2;
+$millenialpink: #FEF2F0;
+$pink: #F9BAB1;
+
+@mixin bodyFont {
+  font-family: "Work Sans", sans-serif;
+  font-weight: regular;
+}
+
+@mixin input {
+  margin:2px;
+  font-weight: medium;
+  color: black;
+  font-size:16px;
+  border: 1px solid $primary;
+  outline:none;
+  border-radius: 75px;
+    width: 240px;
+  height: 40px;
+  transition: all 0.2s ease 0s;
+    &:focus {
+    box-shadow: 0 1px 2px 0px rgb(209, 248, 202);
+    border: 1px solid $secondary;
+  }
+}
+
+.directoryContainer {
+  margin-bottom: 100px;
+}
+
+input {
+  @include bodyFont();
+  @include input();
+  font-size: 12px;;
+  text-indent: 10px;
+}
+
+.findContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.containSearchPlant img {
+    width: 300px;
+    border-radius: 15px;
+}
