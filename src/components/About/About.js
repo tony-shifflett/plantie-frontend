@@ -20,21 +20,33 @@ const About = (props) => {
       <br></br>
 
       <div className="teamContainer">
-        <div className="monica">
-          <img src="https://res-console.cloudinary.com/dnfumu7j3/thumbnails/transform/v1/image/upload/Y19zY2FsZSx3XzIwMA==/v1622145470/UGxhbnRpZSB0ZWFtLzY5RURCMEU1LUIxMUItNERBMy1BOEEwLTVFODBGNTM0QUQ3MF8xXzEwNV9jX3V6c2J6bQ==/template_primary" />
+        <div>
+          <img
+            className="monica"
+            src="https://res.cloudinary.com/dnfumu7j3/image/upload/c_scale,w_250/v1622145470/Plantie%20team/69EDB0E5-B11B-4DA3-A8A0-5E80F534AD70_1_105_c_uzsbzm.jpg"
+          />
         </div>
         <h2>Monica</h2>
 
-        <div className="jerrald">
-          <img src="https://res-console.cloudinary.com/dnfumu7j3/thumbnails/transform/v1/image/upload/Y19zY2FsZSxxXzEwMCx3XzIwMA==/v1622145154/UGxhbnRpZSB0ZWFtL3NsYWNrLWltZ3MuY29tX2g0bmZkNA==/template_primary" />
+        <div>
+          <img
+            className="jerrald"
+            src="https://res.cloudinary.com/dnfumu7j3/image/upload/c_scale,w_250/v1622145154/Plantie%20team/slack-imgs.com_h4nfd4.jpg"
+          />
           <h2>Jerald</h2>
         </div>
-        <div className="tony">
-          <img src="https://res-console.cloudinary.com/dnfumu7j3/thumbnails/transform/v1/image/upload/Y19zY2FsZSxxXzEwMCx3XzIwMA==/v1622145894/UGxhbnRpZSB0ZWFtL1QwMzUxSlpRMC1VMDFRTEpNTEJSVC1kZTg5MWVmYWVmNWQtNTEyX2tpYTh2dA==/template_primary" />
+        <div>
+          <img
+            className="tony"
+            src="https://res.cloudinary.com/dnfumu7j3/image/upload/c_scale,w_250/v1622145894/Plantie%20team/T0351JZQ0-U01QLJMLBRT-de891efaef5d-512_kia8vt.jpg"
+          />
           <h2>Tony</h2>
         </div>
-        <div className="joe">
-          <img src="https://res-console.cloudinary.com/dnfumu7j3/thumbnails/transform/v1/image/upload/Y19zY2FsZSxxXzEwMCx3XzIwMA==/v1622146135/UGxhbnRpZSB0ZWFtLzE2MDcwMjY5OTUyMjFfbmZlYjlx/template_primary" />
+        <div>
+          <img
+            className="joe"
+            src="https://res.cloudinary.com/dnfumu7j3/image/upload/c_scale,w_250/v1622146135/Plantie%20team/1607026995221_nfeb9q.jpg"
+          />
           <h2>Joe</h2>
         </div>
       </div>
