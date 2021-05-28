@@ -9,22 +9,33 @@ import store, {getPlants} from  '../../store'
 
 const MyPlants = (props)=>{
     
+
     const plants =()=>{
             
+
         return (
             <>
                 <Link to='/FindPlants'>
                     <div>+</div>
                 </Link>
             <div id='plant-info'>
-                {store.getState().map((plant)=>(
-                    <article key={plant.id}  >
-                        <img src={plant.img} />
-                        <h1 onClick={()=>setIsVisible(!isVisible)}>{plant.name}</h1>
-                        <p>{plant.type}</p>
-                        <MyPlantsDetails plant={plant} isVisible={isVisible}/>
-                    </article>
-                ))}
+                {store.getState().map((plant)=>{
+
+                    //individual instance of state for each plant to handle visibility of details
+                    const [isVisible, setIsVisible] = useState(false)
+                    const clickHandler=()=>{
+                        setIsVisible(!isVisible)
+                    }
+                    
+                    return(
+                        <article key={plant.id} >
+                            <img  src={plant.img}/>
+                            <h1>{plant.nickname}</h1>
+                            <h3 onClick={clickHandler}>{plant.type}</h3>
+                            <MyPlantsDetails isVisible = {isVisible} plant={plant}/>
+                        </article>
+                    )
+                })}
             </div>
             </>
         )
