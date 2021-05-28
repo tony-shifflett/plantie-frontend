@@ -32,7 +32,8 @@ function App() {
   return (
     <div className="App">
 
-      <Switch>
+    
+        <Switch>
         <Route exact path='/' render={(rp) => <Splash {...rp} />} />
         <Route exact path='/MyPlants' render={(rp) => <MyPlants {...rp}/>} />
         <Route exact path='/DailyTask' render={(rp) => <DailyTask {...rp}  />} />
