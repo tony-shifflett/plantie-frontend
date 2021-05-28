@@ -45,7 +45,7 @@ const MyPlants = (props)=>{
 
                 const pencilClickHandler = ()=>{
                   updateFormDisplay(!formDisplay)
-                 
+                  // console.log(formDisplay)
                 }
 
 
