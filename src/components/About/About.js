@@ -4,17 +4,26 @@ import "./about.scss";
 const About = (props) => {
   return (
     <div>
+      <center>
+        <div className="logoContain2">
+          <img
+            className="logo"
+            src="https://res.cloudinary.com/dnfumu7j3/image/upload/v1621962554/plant_ynspft.svg"
+            alt="plant logo"
+          />
+        </div>
+      </center>
+
       <h1 className="aboutTitle">
         Meet the <span className="highlight">Plantie</span> team!{" "}
       </h1>
-      <h1>🍃</h1>
       <br></br>
 
-      <div className="teamCotainer">
+      <div className="teamContainer">
         <div className="monica">
           <img src="https://res-console.cloudinary.com/dnfumu7j3/thumbnails/transform/v1/image/upload/Y19zY2FsZSx3XzIwMA==/v1622145470/UGxhbnRpZSB0ZWFtLzY5RURCMEU1LUIxMUItNERBMy1BOEEwLTVFODBGNTM0QUQ3MF8xXzEwNV9jX3V6c2J6bQ==/template_primary" />
-          <h2>Monica</h2>
         </div>
+        <h2>Monica</h2>
 
         <div className="jerrald">
           <img src="https://res-console.cloudinary.com/dnfumu7j3/thumbnails/transform/v1/image/upload/Y19zY2FsZSxxXzEwMCx3XzIwMA==/v1622145154/UGxhbnRpZSB0ZWFtL3NsYWNrLWltZ3MuY29tX2g0bmZkNA==/template_primary" />
@@ -26,8 +35,8 @@ const About = (props) => {
         </div>
         <div className="joe">
           <img src="https://res-console.cloudinary.com/dnfumu7j3/thumbnails/transform/v1/image/upload/Y19zY2FsZSxxXzEwMCx3XzIwMA==/v1622146135/UGxhbnRpZSB0ZWFtLzE2MDcwMjY5OTUyMjFfbmZlYjlx/template_primary" />
-        <h2>Joe</h2>
-              </div>
+          <h2>Joe</h2>
+        </div>
       </div>
     </div>
   );

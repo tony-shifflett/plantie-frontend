@@ -16,6 +16,8 @@ import addMonths from "date-fns/addMonths";
 import subMonths from "date-fns/subMonths";
 import toDate from "date-fns/toDate";
 
+import "./dailytasks.scss"
+
 const DailyTasks = (props) => {
   //test schema?
   // const plantList = [
@@ -28,26 +30,40 @@ const DailyTasks = (props) => {
 
   const newPlant = store.getState().map((plant, index) => {
     return (
-      <div key={index}>
-        <h1>{plant.type}</h1>
-        <p>Time to water</p>
-        <p>{plant.water}</p>
+      <div>
+        <div className="container">
+          <div className="cardPlant">
+            <div className="holdImg">
+              <div className="plantPic">
+                <img
+                  className="plantCard"
+                  src="https://res.cloudinary.com/dnfumu7j3/image/upload/c_fit,h_100,r_0,w_100/v1621976614/Fresh_Folk_-_Plants_12_ux07af.png"
+                />
+              </div>
+            </div>
+            <div className="holdText">
+              <div className="holdTxtAgain" key={index}>
+                <h3 className="cardTitle">{plant.type}</h3>
+                <p className="cardText">Time to water</p>
+                <p className="cardText">{plant.water}</p>
+              </div>
+            </div>
+            <div className="holdWater">
+              <div className="holdDrop">
+                <img
+                  className="droplet"
+                  src="https://res.cloudinary.com/dnfumu7j3/image/upload/v1621993925/drop_e1ois0.svg"
+                  alt="water droplet"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     );
   });
-  const Card = {
-    padding: "2px 16px",
-    boxShadow: "1px 1px 7px 0px rgba(0,0,0,0.4)",
-    width: "90%",
-    backgroundColor: "#F8F8F8",
-    borderRadius: "15px",
-  };
-  const Container = {
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-  };
+
+
 
   const [currentDate, setCurrentDate] = useState(new Date());
   const date = () => {
@@ -56,13 +72,16 @@ const DailyTasks = (props) => {
   };
 
   return (
-    <>
+    <div>
       <h1>Today's tasks</h1>
       <div>{date()}</div>
-      <div style={Container}>
-        <div style={Card}>{newPlant}</div>
-      </div>
-    </>
+
+      {newPlant}
+
+    </div>
+      
+    
   );
 };
+      
 export default DailyTasks;

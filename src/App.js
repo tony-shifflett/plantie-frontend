@@ -17,7 +17,7 @@ import FindPlants from './components/FindPlants/FindPlants'
 import Splash from "./components/Splash/Splash"
 import Footer from './components/Footer/Footer'
 import Calendar from './components/Calendar/Calendar'
-import MyPlants from './components/MyPlants';
+import MyPlants from './components/MyPlants/MyPlants';
 // import plantSeed from './plantSeed'
 import DailyTask from "./components/DailyTasks/DailyTasks"
 import Identify from './components/Identify';

@@ -10,30 +10,35 @@ h1 {
     font-size: 30px;
 }
 
+.logoContain2 {
+    margin-top: 10px;
+    width:70px;
+}
+
 .highlight {
     color: $primary;
 }
 
 .teamContainer {
-    
+    margin-bottom: 100px;
 }
 
-.monica {
 
-}
-
-.jerrald {
-
-}
-
-.tony {
-
-}
-
-.joe {
-margin-bottom: 100px;
-}
-
-img {
+.monica img {
     border-radius: 100px;
 }
+
+.jerrald img {
+    border-radius: 100px;
+
+}
+
+.tony img {
+    border-radius: 100px;
+
+}
+
+.joe img{
+    border-radius: 100px;
+}
+
