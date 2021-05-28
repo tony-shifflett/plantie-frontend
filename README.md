@@ -97,3 +97,10 @@ const plantReducer = (state = initialState, action) => {
     }
 }
 ```
+Filter Form
+```
+    const handleChange = (e) => {
+    e.preventDefault();
+    setFilteredPlants(plants.filter(p => p.type.toLowerCase().includes(e.target.value.toLowerCase()) || p.binomial.toLowerCase().includes(e.target.value.toLowerCase())))
+  }
+```  
