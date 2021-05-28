@@ -71,3 +71,29 @@ Plant Care and Tracking App
 - redux-thunk 
 - react-icons 
 - react-cam
+
+# Code Snippets
+
+```
+//reducer function takes in an action and returns new state based on that action
+const plantReducer = (state = initialState, action) => {
+
+    //switch statement to check action.type, which describes what happens to state
+    switch (action.type) {
+        //add returns new state that includes existing state + payload
+        case 'add':
+            return [...state, action.payload]
+        //remove uses a filter function to return all objects in state - the plant being removed
+        case 'remove':
+            return state.filter((aPlant)=>aPlant._id !==action.payload._id)
+
+        //get state from database 
+        case 'get':
+            return action.payload
+
+        //default returns current state
+        default: 
+            return state;
+    }
+}
+```
