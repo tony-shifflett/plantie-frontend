@@ -1,7 +1,17 @@
 import React from 'react'
+import {BsFillDashCircleFill} from 'react-icons/bs'
+import store, {removePlant} from "../../store"
 
 
 const MyPlantsDetails = (props) =>{
+
+    const deleteHandler = ()=>{
+        store.dispatch(removePlant(props.plant))
+        //workaround to rerender MyPlants
+        props.history.push('/calendar')
+        props.history.goBack()
+    }
+    
 
     if (props.isVisible){
         return (
@@ -17,6 +27,9 @@ const MyPlantsDetails = (props) =>{
                     <h2>Description</h2>
                     <p>{props.plant.info}</p>
                 </section>
+                <div className="containAddIcon">
+                <BsFillDashCircleFill className="addPlantIcon" size="55" onClick={deleteHandler}/>
+              </div>
             </div>
         )
 

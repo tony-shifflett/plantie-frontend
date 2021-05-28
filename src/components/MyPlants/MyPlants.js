@@ -14,8 +14,7 @@ const MyPlants = (props)=>{
     
 
     const plants =()=>{
-            
-
+     
         return (
           <>
             <Link to="/FindPlants">
@@ -36,11 +35,11 @@ const MyPlants = (props)=>{
                   <div className="holdFoundPlants">
                     <article key={plant.id}>
                       <div className="holdFoundImg">
-                        <img src={plant.img} />
+                        <img src={plant.img} alt={`image of ${plant.type}`} />
                       </div>
                       <h1>{plant.nickname}</h1>
                       <h3 onClick={clickHandler}>{plant.type}</h3>
-                      <MyPlantsDetails isVisible={isVisible} plant={plant} />
+                      <MyPlantsDetails history={props.history} isVisible={isVisible} plant={plant}/>
                     </article>
                   </div>
                 );
