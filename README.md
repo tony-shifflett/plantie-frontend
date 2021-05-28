@@ -8,34 +8,34 @@ Plant Care and Tracking App
 
 ### Wireframes and Architecture
 
-- [Wireframes] (https://www.behance.net/gallery/116481007/Plant-Care-App-UXUI?tracking_source=search_projects_recommended)
+- [Wireframes](https://www.behance.net/gallery/116481007/Plant-Care-App-UXUI?tracking_source=search_projects_recommended)
 
-- [Notion] (https://www.notion.so/UNIT-3-PROJECT-PLANTIE-11e3f05a548c4b429ae50a2ed1e612c9)
+- [Notion](https://www.notion.so/UNIT-3-PROJECT-PLANTIE-11e3f05a548c4b429ae50a2ed1e612c9)
 
 - [Link to Figma](https://www.figma.com/file/efPjXJRB78XDCNxJ8U9M7y/Plantie-React-Architechture?node-id=0%3A1)
 
 ### Time/Priority Matrix
 | Component | Priority | Estimated Time | Time Invested | Actual Time |Completed|
 | --- | :---: |  :---: | :---: | :---: |:---:|
-| Git management | H | 8hrs | 10hrs |  |ongoing|
-| Q&A and bug fixes | H | 8hrs | 10hrs | |ongoing|
-| Connection | H | 1hr | 1hr | 1hr |X|
-| Express  | H | 1hr | 1hrs |1hr|X|
-| Routes | H | 2hrs | 2hrs |2hrs|X|
-| Controllers | H | 3hrs | 1hrs |1hr|X|
-| Seed | H | 4hrs | 1hrs | 1hr|X|
+| Git management | H | 8hrs | 10hrs | 8hrs| X | 
+| Q&A and bug fixes | H | 8hrs | 10hrs | 8hrs | X |
+| Connection | H | 1hr | 1hr | 1hr | X |
+| Express  | H | 1hr | 1hrs | 1hr | X |
+| Routes | H | 2hrs | 2hrs | 2hrs | X|
+| Controllers | H | 3hrs | 1hrs | 1hr | X |
+| Seed | H | 4hrs | 1hrs | 1hr | X |
 | Deployment | H | 2hrs | 1hrs | 1hrs |X|
 | Install and set up react router | H | 0.5hrs | 0.5hrs |0.5hrs |X|
-| Switch, Links, Routes | H | 2hrs | 1hrs | 1hr|X|
-| Header (Footer)| H | 2hrs | .5 hrs | ||
-| Home Display List from Backend | H | 4hrs | 1hrs |  |X|
-| CRUD options | H | 6hrs | 3hrs | |3hrs| |X|
-| Create Form | H | 5hrs | 3hrs |  |3hrs| |X|
-| Connecting Form to backend | H | 2hrs| |2hrs |2hrs| |X|
-| Presentation Outline | H | 4hrs| 1hrs | |X|
-| Responsiveness | H | 5hrs | 8hrs | ||
-| Extra Styling | L | 2hrs | 4hrs |  ||
-| Total | H | 86.5hrs| 114.5hrs |  |X|
+| Switch, Links, Routes | H | 2hrs | 1hrs | 1hr | X |
+| Header (Footer)| H | 2hrs | 2hrs | 2hrs | X |
+| Plant Display List from Backend | H | 4hrs | 1hrs | 1hrs | X |
+| CRUD options | H | 6hrs | 3hrs | 3hrs | X |
+| Create Form | H | 5hrs | 3hrs | 3hrs | X |
+| Connecting Form to backend | H | 2hrs| 2hrs | 2hrs | X |
+| Presentation Outline | H | 4hrs | 1hrs | 0.5hr | X |
+| Responsiveness | H | 5hrs | 1hr | 1hr | X | 
+| Extra Styling | L | 2hrs | 4hrs |  4hrs | X |
+| Total | H | 86.5hrs| 45.5hrs | 41hrs |X|
 
 ## MVP/Post-MVP
 ### MVP
@@ -71,3 +71,36 @@ Plant Care and Tracking App
 - redux-thunk 
 - react-icons 
 - react-cam
+
+# Code Snippets
+
+```
+//reducer function takes in an action and returns new state based on that action
+const plantReducer = (state = initialState, action) => {
+
+    //switch statement to check action.type, which describes what happens to state
+    switch (action.type) {
+        //add returns new state that includes existing state + payload
+        case 'add':
+            return [...state, action.payload]
+        //remove uses a filter function to return all objects in state - the plant being removed
+        case 'remove':
+            return state.filter((aPlant)=>aPlant._id !==action.payload._id)
+
+        //get state from database 
+        case 'get':
+            return action.payload
+
+        //default returns current state
+        default: 
+            return state;
+    }
+}
+```
+Filter Form
+```
+    const handleChange = (e) => {
+    e.preventDefault();
+    setFilteredPlants(plants.filter(p => p.type.toLowerCase().includes(e.target.value.toLowerCase()) || p.binomial.toLowerCase().includes(e.target.value.toLowerCase())))
+  }
+```  

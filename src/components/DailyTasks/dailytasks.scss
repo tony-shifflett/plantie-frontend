@@ -24,6 +24,8 @@ $pink: #F9BAB1;
     @include titleFont();
     font-size: 16px;
     font-weight: 900;
+   
+    // padding: -40px;
 }
 
 .container {
@@ -40,6 +42,7 @@ $pink: #F9BAB1;
   flex-direction: row;
 justify-content: space-between;
 // flex-wrap: wrap;
+background-color: rgb(255, 255, 255);
 max-width: 800px;
   height: 123px;
   border:1px solid $water;
@@ -48,7 +51,8 @@ max-width: 800px;
     transition: all 0.5s ease 0s;
     cursor: pointer;
       &:hover {
-    background-color: $neutral;
+    background-color: rgba(245, 245, 245, 0.801);
+    ;
   }
     &:active {
       transition: all 0.1s ease 0s;
@@ -62,27 +66,31 @@ max-width: 800px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: rgb(238, 238, 238);
-  border-radius: 15px;
+  // background-color: $pink;
+  border-radius: 8px;
   margin: 10px;
   width:100px;
+  height: 100px;
 }
 
-img .plantCard {
+.plantCard {
+  width:100px;
+  height: 100px;
   display: flex;
-  // background-color: $neutral;
-  height: auto;
-  // border: 1px solid red;
-  border-radius: 80px;
+  background-color: $neutral;
+  max-height: auto;
+  border: 2px solid $primary;
+  border-radius: 100px;
 }
  
 .holdWater {
   display: flex;
-
+overflow-wrap: break-word;
   height: 100px;
-    // flex-direction: row;
+    flex-direction: column;
     
     justify-content: space-evenly;
+    align-items: center;
   background-color: rgb(212, 243, 253);
   border: 2px solid #9CD7F2;
   border-radius: 100px;
@@ -99,7 +107,8 @@ img .plantCard {
 
 .holdText {
     display: flex;
-    flex-direction: column;
+  line-height: 1.5;
+    // height: 100px;
     // align-content: center;
 //     flex-direction: row;
 //     justify-content: left;
@@ -117,7 +126,9 @@ img .plantCard {
     // justify-content: space-evenly;
 //     align-items: center;
 //   text-align: center;
-
-//   max-height: 100%;
-//   max-width: 100%;
+// word-wrap: break-word;
+    text-overflow: ellipsis;
+    overflow:hidden;
+  height: 100%;
+width: 100px;
 }
