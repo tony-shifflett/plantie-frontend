@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const MyPlantsDetails = (props) =>{
+const MyPlantsDetails = React.memo((props) => {
 
     if (props.isVisible){
         return (
@@ -26,5 +26,5 @@ const MyPlantsDetails = (props) =>{
     }
 
 
-}
+ })
 export default MyPlantsDetails

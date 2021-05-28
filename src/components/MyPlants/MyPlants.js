@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react"
 import MyPlantsDetails from './MyPlantsDetails'
 import { Link } from 'react-router-dom'
 import { BsFillPlusCircleFill } from "react-icons/bs"
+import Plant from './Plant'
 
 //store import
 import store, {getPlants} from  '../../store'
@@ -25,26 +26,7 @@ const MyPlants = (props)=>{
               </div>
             </Link>
             <div id="plant-info">
-              {store.getState().map((plant) => {
-                //individual instance of state for each plant to handle visibility of details
-                const [isVisible, setIsVisible] = useState(false);
-                const clickHandler = () => {
-                  setIsVisible(!isVisible);
-                };
-
-                return (
-                  <div className="holdFoundPlants">
-                    <article key={plant.id}>
-                      <div className="holdFoundImg">
-                        <img src={plant.img} />
-                      </div>
-                      <h1>{plant.nickname}</h1>
-                      <h3 onClick={clickHandler}>{plant.type}</h3>
-                      <MyPlantsDetails isVisible={isVisible} plant={plant} />
-                    </article>
-                  </div>
-                );
-              })}
+              {store.getState().map((plant) =><Plant plant={plant}/>)}
             </div>
           </>
         );
