@@ -26,7 +26,8 @@ const MyPlants = (props)=>{
               </div>
             </Link>
             <div id="plant-info">
-              {store.getState().map((plant) =><Plant plant={plant}/>)}
+              {store.getState().map((plant) =>
+              <Plant plant={plant} history={props.history}/>)}
             </div>
           </>
         );

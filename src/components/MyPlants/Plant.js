@@ -27,7 +27,7 @@ const Plant = (props)=>{
                     <h1>{nickname}</h1>
 
                     <h3 onClick={clickHandler}>{plant.type}</h3>
-                    <MyPlantsDetails isVisible={isVisible} plant={plant} />
+                    <MyPlantsDetails history = {props.history} isVisible={isVisible} plant={plant} />
                   </article>
                 </div>
           </div>

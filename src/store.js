@@ -24,7 +24,7 @@ export function addPlant(plant) {
 }
 
 //action creator function 'remove' ; accepts plant object and uses it as payload
-const removePlant = (plant) => {
+export function removePlant (plant) {
     return {type: 'remove', payload: plant}
 }
 
