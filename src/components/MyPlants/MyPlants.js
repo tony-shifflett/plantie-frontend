@@ -30,6 +30,7 @@ const MyPlants = (props)=>{
                 const [formData, setFormData] = useState(plant.nickname)
 
                 const handleChange = (event)=>{
+                  console.log(event.target.value)
                   setFormData(...formData, event.target.value)
                 }
 
