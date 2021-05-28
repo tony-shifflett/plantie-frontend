@@ -19,6 +19,7 @@ const MyPlants = (props)=>{
         return (
           <>
             <Link to="/FindPlants">
+              <h1>My Plants</h1>
               <div className="containAddIcon">
                 <BsFillPlusCircleFill className="addPlantIcon" size="55" />
               </div>

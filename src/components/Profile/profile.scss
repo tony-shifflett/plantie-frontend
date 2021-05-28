@@ -1,0 +1,39 @@
+// Import font
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Work+Sans:wght@400;500&display=swap");
+
+// Color Palette
+$primary: #326e62;
+$water: #8FA9BB;
+$secondary: #81b8a8;
+$neutral: #D2D2D2;
+$millenialpink: #FEF2F0;
+$pink: #F9BAB1;
+
+
+.proContain {
+
+}
+
+
+.containProfile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+.containProPic {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 210px;
+    background-color:$secondary;
+    border-radius: 200px;
+}
+
+.proPic  {
+    width:200px;
+    border-radius: 100px;
+    margin: 5px
+}
