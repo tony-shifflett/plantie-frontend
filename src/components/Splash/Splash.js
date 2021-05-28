@@ -33,7 +33,7 @@ const Splash = () => {
             alt="plant logo"
           />
         </div>
-        <h1 className="plantie">Plantie</h1>
+        <h1 className="plantie">plantie</h1>
         <p>We help make plant care easy.</p>
         <div className="contact">
           <div>
@@ -58,7 +58,7 @@ const Splash = () => {
             <span className="cr">
               © 2021
               <Link to="/about" className="abLink">
-                Plantie
+                plantie
               </Link>
             </span>
           </div>

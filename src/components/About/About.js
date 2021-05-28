@@ -15,7 +15,7 @@ const About = (props) => {
       </center>
 
       <h1 className="aboutTitle">
-        Meet the <span className="highlight">Plantie</span> team!{" "}
+        Meet the <span className="highlight">plantie</span> team!{" "}
       </h1>
       <br></br>
 
