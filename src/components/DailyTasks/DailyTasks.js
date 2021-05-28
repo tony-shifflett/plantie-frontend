@@ -35,10 +35,7 @@ const DailyTasks = (props) => {
           <div className="cardPlant">
             <div className="holdImg">
               <div className="plantPic">
-                <img
-                  className="plantCard"
-                  src="https://res.cloudinary.com/dnfumu7j3/image/upload/c_fit,h_100,r_0,w_100/v1621976614/Fresh_Folk_-_Plants_12_ux07af.png"
-                />
+                <img className="plantCard" src={plant.img} />
               </div>
             </div>
             <div className="holdText">
